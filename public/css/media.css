@@ -25,3 +25,66 @@
 
 
 }
+
+
+
+/* 900px
+--------------------------------------------------------*/
+@media screen and (max-width: 900px) {
+
+     #innerHeader, #main, #innerFooter {
+        width: 100%;
+
+     }
+
+    
+    
+    h2{
+    padding-left: 5%;
+    margin-bottom: .3em;    
+    }
+    
+    
+    #wrapper p{
+    padding-left: 5%;
+    
+    }
+    
+    
+    .locationName, .locationData{
+    font-size: 1.6em;
+    line-height:4em;
+    padding-left:4%;
+    
+}
+
+ .locationName {
+    line-height:4em;
+ }    
+    
+ .locationData{
+    line-height:6em;
+     width:45%;
+ }    
+       
+    
+#innerFooter {
+        padding-left: 5%;
+
+     }
+    
+    
+} /* end 900*/
+
+
+
+/* 475px
+--------------------------------------------------------*/
+@media screen and (max-width: 475px) {
+
+#dest1 {
+    padding-top: 1.2em;
+
+}
+
+}

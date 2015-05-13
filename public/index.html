@@ -5,22 +5,54 @@
     <title>API Project 1</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/media.css">
-        
-    <script src="js/myJs.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
     
 </head>
 <body>
     <header>
         <div id="innerHeader">
-        <H1>API Project 1 Site</H1>
+        <H1>API Project 1</H1>
+            
             <p class="name">Joe Childress</p>
+            <button id="newLocation">RESET</button>
     
-        </div>
+        </div><!-- /innerHeader -->
     </header><!-- /header -->
     <div id="wrapper">
             <div id="main">
-            <H2>Welcome to the API Project 1 Site.</H2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <H2>Estimated Drive Times</H2>
+                <p><span class="boldBlue">Your Location: </span><span id="yourLocation">&nbsp;</span></p>
+                
+                
+    <!-- LOCATION INFO BUCKET -->            
+<!--
+    <section class="infoBar">
+        <div class="locationName" id="dest1"><img class="spin" src="img/spinning-wheel.gif"></div>
+        <div class="locationData" id="dur1">&nbsp</div>
+    </section>            
+    <div id="resultsBox"></div>
+-->
+                 <!-- LOCATION INFO BUCKET -->            
+<!--
+    <section class="infoBar">
+        <div class="locationName">LOCATION NAME</div>
+        <div class="locationData">LOCATION DATA</div>
+    </section>            
+-->
+    
+     <!-- LOCATION INFO BUCKET -->            
+<!--
+    <section class="infoBar">
+        <div class="locationName">LOCATION NAME</div>
+        <div class="locationData">LOCATION DATA</div>
+    </section>            
+-->
+    <div id="resultsDump"></div>
+                
             </div> <!-- /main -->
     </div> <!-- /wrapper -->
     <footer>
@@ -28,6 +60,10 @@
     <p>Site by: Joe Childress</p>
         </div> <!-- /innerFooter -->
     </footer><!-- /footer -->
+    
+
+     <script src="js/myscripts4.js"></script>
+    
     
 </body>
 </HTML>

@@ -10,11 +10,35 @@ blockquote, q {	quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
 table {	border-collapse: collapse;	border-spacing: 0;}
 
+
+
+
+
+
+
+/*********************** 
+COLORS
+
+GREEN  #2F9F78
+LIGHT GREEN #9AD9C9
+DARK GRAY #333333
+LIGHT GRAY #E5E9EC
+BLUE #3498DB
+***********************/
+
+/*sticky footer*/
+
+html, body {
+  height: 100%;
+}
+
+
+
 body{
     font-family: sans-serif;
     font-size: 100%;
+    line-height: 1.5em;
 }
-
 
 
 h1{
@@ -26,6 +50,7 @@ h2 {
     font-weight: bold;
     font-size: 1.7em;
     color: #969EA3;
+    margin-bottom: 1em;
 }
 
 p {
@@ -35,45 +60,157 @@ p {
     padding-top: 1em;
 }
 
+
+.boldBlue{
+/*    font-weight: bolder;*/
+    color:#3498DB;
+}
+
 header {
     width:100%;
-    height: 100px;
+    height: 8em;
     background-color: #2F9F78;
     color: white;
-    
+    padding-bottom: .5em;
+    padding-top: 1em;
 }
 
 #innerHeader {
-    padding-top: 1em;
+    
+    
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .name {
     padding-top: .5em;
     color: white;
+}
 
-
+button#newLocation {
+    height:5em;
+    width:30%;
+    background-color: #9AD9C9;
+    border: none; 
 }
 
 #wrapper{
-width:100%;
-height: 500px;
+    width:100%;
+        /*height: 500px;*/
     background-color: white;
+    
+/*    sticky footer*/
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+
+
+
+/*    sticky footer*/
+#wrapper:after {
+  content: "";
+  display: block;
+}
+
+
+
+
+
+#main {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+       
+}
+
+
+
+/*LOCATION BUCKETS*/
+
+.infoBar {
+    width:100%;
+    height: 9em;
+    border: 8px solid #E5E9EC;
+    margin-top: 1em;
+    
+}
+
+.locationName{
+    width:39%;
+    float: left;
+/*    background-color:blue;*/
 
 }
 
-#main {
-    padding-top: 1em;
-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+.spin{
+
+/*width:14px;*/
+}
+
+.locationData{
+    width:55%;
+    float: right;
+/*    background-color:red;*/
+    
+}
+
+.locationName, .locationData{
+    font-size: 2.2em;
+    line-height:4em;
+    padding-left:2.5%;
+    color: #333333;
+
+}
+
+
+.locationName2{
+    width:60%;
+    float: left;
+}
+
+.locationData2{
+    width: 20%;
+    float: right;
+}
+
+.locationName2, .locationData2{
+    font-size: .8em;
+    line-height:4em;
+    padding-left:2.5%;
+    color: #333333;
+
+}
+
+
+/*temp styling for wip*/
+
+#dest1 {
+    font-size: 1.4em;
+    line-height: 1em;
+    padding-top: 2em;
+
+}
+
+
+#resultsBox{
+    padding: 10px 0 0 20px;
+
+}
+
+footer, #wrapper:after{
+height: 142px;
+
+
 }
 
 footer{
 width:100%;
-height: 100px;
+/*height: 100px;*/
     background-color: #E5E9EC;
 
 }
