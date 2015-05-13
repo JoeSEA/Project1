@@ -69,7 +69,8 @@ p {
 header {
     width:100%;
     height: 8em;
-    background-color: #2F9F78;
+/*    background-color: #2F9F78;#31415C*/
+    background-color:#31415C;
     color: white;
     padding-bottom: .5em;
     padding-top: 1em;
@@ -134,7 +135,7 @@ button#newLocation {
 
 .infoBar {
     width:100%;
-    height: 9em;
+    height: 7em;
     border: 8px solid #E5E9EC;
     margin-top: 1em;
     
@@ -148,17 +149,20 @@ button#newLocation {
 }
 
 .spin{
-
-/*width:14px;*/
+padding-left: 10px;
+width:30px;
 }
 
+/*
 .locationData{
     width:55%;
     float: right;
-/*    background-color:red;*/
+
     
 }
+*/
 
+/*
 .locationName, .locationData{
     font-size: 2.2em;
     line-height:4em;
@@ -166,21 +170,31 @@ button#newLocation {
     color: #333333;
 
 }
+*/
 
 
 .locationName2{
-    width:60%;
+    width:40%;
     float: left;
+    margin-top: 1em;
+/*    line-height:4em;*/
+    font-size: 1.5em;
+    padding-right: 10%;
+/*    background-color:red;*/
 }
 
 .locationData2{
-    width: 20%;
-    float: right;
+/*    width: 20%;*/
+/*    float: right;*/
+/*    line-height:4em;*/
+    font-size: 1.4em;
+    margin-top: 1em;
+/*    background-color:yellow;*/
 }
 
 .locationName2, .locationData2{
-    font-size: .8em;
-    line-height:4em;
+    padding-top: .3em;
+    
     padding-left:2.5%;
     color: #333333;
 

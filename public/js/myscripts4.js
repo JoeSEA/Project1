@@ -1,10 +1,17 @@
 //var lat1="47.6171571";
 //var lon1="-122.3267601";
+//var origin1 = ["47.6171571,-122.3267601"];
+
+
 var lat1="";
 var lon1="";
 var origin1 ="";
-//var origin1 = ["47.6171571,-122.3267601"];
-var destination1 = ["Park-N-Ride, Mountlake Terrace, WA 98043, USA", "Portland, OR"];
+var d1="Park-N-Ride, Mountlake Terrace, WA 98043, USA"
+var d2="Portland, OR"
+var d3="San Francisco, CA"
+var d4="Pike Place Market, Seattle, WA"
+
+var myDestinations = [d1,d2,d3,d4 ];
 var locationNow = document.getElementById("yourLocation");
 var showResults = document.getElementById("resultsBox");
 
@@ -43,7 +50,7 @@ function showPosition(position) {
             service.getDistanceMatrix(
             {
               origins: origin1,
-              destinations: destination1,
+              destinations: myDestinations,
               travelMode: google.maps.TravelMode.DRIVING,
               unitSystem: google.maps.UnitSystem.IMPERIAL,
         //    durationInTraffic: true,
