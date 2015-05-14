@@ -17,9 +17,15 @@ var showResults = document.getElementById("resultsBox");
 
 var myDump = document.getElementById("resultsDump");
 
+function myClear(){
 
+$(".infoBar").remove();
+
+}
+
+
+$( "#newLocation" ).click(myClear);
 $( "#newLocation" ).click(getLocation);
-
 
 
 //************ LOCATION API **************
@@ -34,8 +40,8 @@ function getLocation() {
 
 
 function showPosition(position) {
-    locationNow.innerHTML = "<br>Latitude: " + position.coords.latitude.toFixed(5) + 
-    " Longitude: " + position.coords.longitude.toFixed(5); 
+//    locationNow.innerHTML = "<br>Latitude: " + position.coords.latitude.toFixed(5) + 
+//    " Longitude: " + position.coords.longitude.toFixed(5); 
     
     lat1=position.coords.latitude;
     lon1=position.coords.longitude;
@@ -88,7 +94,7 @@ function showPosition(position) {
                 console.log(myData);
             console.log(resultsTest);
                 
-                
+                locationNow.innerHTML = "<br>" + response.originAddresses; 
                 
 //    ************looping through the drive times returned*********
                 
@@ -104,7 +110,7 @@ function showPosition(position) {
                     $("#resultsDump").append(
                         
                         
-                        '<section class="infoBar"><div class="locationName2">' + response.destinationAddresses[i] + '</div> <div class="locationData2"> ' + resultsTest.elements[i].duration.text + '</div> </section>');
+                        '<section class="infoBar"><div class="locationName2">' + response.destinationAddresses[i] + '</div> <div class="locationData2"> ' + resultsTest.elements[i].duration.text + '</div> <span class="locationDistance"> ' + resultsTest.elements[i].distance.text +'</span> </section>');
                     
                     
                     
@@ -117,16 +123,15 @@ function showPosition(position) {
                 
                 
                      
-                timeBox1.innerHTML = results.duration.text;
-                destBox1.innerHTML = response.destinationAddresses[0];
+//                timeBox1.innerHTML = results.duration.text;
+//                destBox1.innerHTML = response.destinationAddresses[0];
                 
 //                temp test for 2nd result
-                showResults.innerHTML = response.destinationAddresses[1];
-                showResults.innerHTML += "&nbsp &nbsp &nbsp" + results2.duration.text;
+//                showResults.innerHTML = response.destinationAddresses[1];
+//                showResults.innerHTML += "&nbsp &nbsp &nbsp" + results2.duration.text;
             }
         }
             calculateDistances();
-
 
 
 

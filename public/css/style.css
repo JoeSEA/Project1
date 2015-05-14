@@ -91,10 +91,12 @@ header {
 }
 
 button#newLocation {
-    height:5em;
+    margin-top: 1em;
+    height:3em;
     width:30%;
     background-color: #9AD9C9;
     border: none; 
+/*    display: none;*/
 }
 
 #wrapper{
@@ -147,6 +149,16 @@ button#newLocation {
 /*    background-color:blue;*/
 
 }
+
+
+.locationDistance{
+/*    padding-left:5%;*/
+/*    padding-top:.2em;*/
+
+
+}
+
+
 
 .spin{
 padding-left: 10px;
