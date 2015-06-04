@@ -1,151 +1,176 @@
 /* 1150px
 --------------------------------------------------------*/
-@media screen and (max-width: 1150px) {
 
-
-
-
-}
-
-
-
+@media screen and (max-width: 1150px) {}
 /* 1100px
 --------------------------------------------------------*/
-@media screen and (max-width: 1100px) {
 
-
-
-}
-
-
+@media screen and (max-width: 1100px) {}
 /* 1100px
 --------------------------------------------------------*/
-@media screen and (max-width: 1100px) {
 
+@media screen and (max-width: 1100px) {}
+
+/* 980px
+--------------------------------------------------------*/
+
+/*
+@media screen and (max-width: 970px) {
+
+
+ #destField {
+        width: 50%;
+ 
+ }
 
 
 }
+*/
+
 
 
 
 /* 900px
 --------------------------------------------------------*/
+
 @media screen and (max-width: 900px) {
-
-     #innerHeader, #main, #innerFooter {
+    #innerHeader,
+    #main,
+    #innerFooter {
         width: 100%;
-
-     }
-
-    
-    
-    h2{
-    padding-left: 5%;
-    margin-bottom: .1em;    
     }
-    
-    
-    #wrapper p{
-    padding-left: 5%;
-    
+    #addressForm {
+        margin-top: .5em;
+        margin-bottom: 1em;
+        margin-left: 5%;
+        /*    display: none;*/
+        /*    border: red 1px solid;*/
     }
-    
-    
-.locationName2{
-/*    width:40%;*/
-    float: left;
-    margin-top: .2em;
-    font-size: 1.2em;
-    padding-right: 10%;
-/*    background-color:red;*/
-}
-
-.locationData2{
-/*    width: 20%;*/
-/*    float: right;*/
-/*    line-height:4em;*/
-    font-size: 1.2em;
-    margin-top: 1.2em;
-/*    background-color:yellow;*/
-}
-
-.locationName2, .locationData2{
-    padding-top: .3em;
-    
-    padding-left:2.5%;
-    color: #333333;
-
-}
-
-/*
+    #destField {
+        width: 70%;
+/*        height: 2.25em;*/
+/*        border: red 1px solid;*/
+    }
+    h2 {
+        padding-left: 5%;
+        margin-bottom: .1em;
+        font-size: 1.7em;
+    }
+    #wrapper p {
+        padding-left: 5%;
+    }
+    .locationName2,
+    .locationData2 {
+        font-size: 1em;
+    }
+    .locationName2 {
+        /*    width:40%;*/
+        
+        float: left;
+        margin-top: .2em;
+        /*    font-size: 1.2em;*/
+        
+        padding-right: 10%;
+        /*    background-color:red;*/
+    }
+    .locationData2 {
+        /*    width: 20%;*/
+        /*    float: right;*/
+        /*    line-height:4em;*/
+        /*    font-size: 1.2em;*/
+        
+        margin-top: .2em;
+        /*    background-color:yellow;*/
+    }
+    .locationName2,
+    .locationData2 {
+        padding-top: .3em;
+        padding-left: 2.5%;
+        color: #333333;
+    }
+    /*
 button#newLocation {
 
     margin-top: 1em;
 }   
 */
-       
     
-#innerFooter {
+    #innerFooter {
         padding-left: 5%;
-
-     }
-    
-    
-} /* end 900*/
-
-
-
+    }
+}
+/* end 900*/
 /* 475px
 --------------------------------------------------------*/
+
 @media screen and (max-width: 475px) {
-    
-    
-    h1{
-    font-size: 2em;
-    
+    #main {
+        padding-top: .3em;
     }
-    
+    h1 {
+        font-size: 1.2em;
+        /*    text-align: left;*/
+        
+        float: left;
+        margin-left: 5%;
+    }
     header {
-    width:100%;
-    height: 4.9em;
-    padding-bottom: .5em;
-    padding-top: 1em;
-}
-
-h2{
-
+        width: 100%;
+        height: 2em;
+        /*    padding-bottom: 0em;*/
+        /*    padding-top: .3em;*/
     }
-    
-    
- .name {
-    padding-top: .5em;
-}
-
-button#newLocation {
-    height:2.8em;
-    width:40%;
-    margin-top: .em;
-}   
-    
-    
-#dest1 {
-    padding-top: 1.2em;
-
-}
-
- #wrapper {
-    padding-top:1.3em;
-    
+    button#formButton {
+        margin-top: .10em;
     }
+    #topInfo {
+        padding-top: .2em;
+        /*    background-color: darkturquoise;*/
+    }
+    h2 {
+        font-size: 1.2em;
+        /*    background-color:chartreuse;*/
+    }
+    p {
+        font-size: 1em;
+        /*    line-height: 0em;*/
+        /*    padding-top: .5em;*/
+        /*    background-color:aqua;*/
+        
+        padding-top: .25em;
+    }
+    .name {
+        padding-top: .5em;
+    }
+    button#newLocation {
+        /*  margin-top: .em;*/
+        
+        float: right;
+        margin-right: 5%;
+    }
+    #dest1 {
+        padding-top: 1.2em;
+    }
+    #wrapper {
+        /*
+    padding-top:0em;
     
-p {
-    padding-top: .75em;
+*/
+    }
+/*
+    #destField {
+        width: 60%;
+    }
+*/
+    p {
+        padding-top: .75em;
+    }
+    .locationName2 {
+        margin-left: 3%;
+/*        padding-top: .5em;*/
+    }
+    .infoBar {
+        margin-top: 0em;
+    }
 }
-    
-    
-.locationName2{
-    margin-left: 3%;
-    padding-top: .5em;
-}
-    
-}/* end 475*/
+/* end 475*/
